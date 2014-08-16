@@ -1,0 +1,8 @@
+{% load_yaml as rawmap %}
+Debian:
+  pkgs:
+    - squid3
+  service: {}
+  config:
+    main: {}
+{% endload %}
