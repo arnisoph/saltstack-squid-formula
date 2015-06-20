@@ -1,8 +1,7 @@
-{% load_yaml as rawmap %}
-Debian:
-  pkgs:
-    - squid3
-  service: {}
-  config:
-    main: {}
-{% endload %}
+os_family:
+  Debian:
+    pkgs:
+      - squid3
+    service: {}
+    config:
+      main: {}
