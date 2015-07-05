@@ -1,7 +1,12 @@
+kernel:
+  Linux:
+    service: {}
+    config:
+      main: {}
 os_family:
   Debian:
     pkgs:
       - squid3
-    service: {}
-    config:
-      main: {}
+  Redhat:
+    pkgs:
+      - squid
