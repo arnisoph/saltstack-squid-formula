@@ -7,7 +7,7 @@ os_family:
         path: /etc/squid3/squid.conf
     service:
       name: squid3
-  Redhat:
+  RedHat:
     pkgs:
       - squid
     config:
