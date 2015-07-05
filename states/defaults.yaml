@@ -1,12 +1,17 @@
-kernel:
-  Linux:
-    service: {}
-    config:
-      main: {}
 os_family:
   Debian:
     pkgs:
       - squid3
+    config:
+      main:
+        path: /etc/squid3/squid.conf
+    service:
+      name: squid3
   Redhat:
     pkgs:
       - squid
+    config:
+      main:
+        path: /etc/squid/squid.conf
+    service:
+      name: squid

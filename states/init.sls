@@ -12,11 +12,11 @@ squid:
     - pkgs: {{ datamap.pkgs }}
   service:
     - {{ datamap.ensure|default('running') }}
-    - name: {{ datamap.service.name|default('squid3') }}
+    - name: {{ datamap.service.name }}
     - enable: {{ datamap.service.enable|default(True) }}
   file:
     - managed
-    - name: {{ datamap.config.main.path|default('/etc/squid3/squid.conf') }}
+    - name: {{ datamap.config.main.path }}
     - mode: 644
     - user: root
     - group: root
